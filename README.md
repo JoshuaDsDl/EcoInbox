@@ -1,242 +1,225 @@
-# 📬 EcoInbox
+# <div align="center">EcoInbox 🌱</div>
 
 <div align="center">
 
-![EcoInbox Logo](https://img.shields.io/badge/EcoInbox-Transform%20Your%20Inbox-00C853?style=for-the-badge&logo=mail&logoColor=white)
+![Next.js Version](https://img.shields.io/badge/Next.js-15.x-000000?style=for-the-badge&logo=next.js)
+![TypeScript Version](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css)
+![License](https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Web-00C853?style=for-the-badge)
 
-**Transform Your Inbox Into an Eco-Friendly Action**
+Une application web de gestion écologique des emails, développée avec Next.js et TypeScript.
 
-*The AI assistant that cleans your emails and plants trees automatically.*
-
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+> 🎓 Projet réalisé dans le cadre du cours de Business Intelligence à l'IMT Nord Europe.
 
 </div>
 
----
+## ✨ Fonctionnalités
 
-## 🌱 About EcoInbox
+- Interface utilisateur moderne avec design écologique
+- Authentification complète (connexion/inscription)
+- Tableau de bord intelligent pour la gestion des emails
+- Classification automatique des emails par catégories (Important, Promotionnel, Newsletter, etc.)
+- Suivi de l'empreinte carbone numérique
+- Suggestions écologiques pour optimiser sa boîte mail
+- Gestion des désabonnements et pièces jointes
+- Statistiques d'impact environnemental (CO2 économisé, arbres équivalents)
+- Système de nettoyage automatique
+- Design responsive et accessible
+- Compatibilité tous navigateurs modernes
 
-EcoInbox is a revolutionary email management platform that combines **artificial intelligence** with **environmental consciousness**. Our intelligent assistant automatically analyzes your emails, removes unnecessary content, and plants trees based on your digital carbon footprint reduction.
+## 🛠️ Technologies Utilisées
 
-### ✨ Key Features
+- **Framework**: Next.js 15.x
+- **Language**: TypeScript 5.x
+- **UI**: Tailwind CSS 3.x
+- **Composants**: shadcn/ui + Radix UI
+- **Icônes**: Lucide React
+- **Styling**: PostCSS + Tailwind
+- **Build**: Turbopack (Next.js)
+- **Linting**: ESLint + TypeScript ESLint
 
-- 🤖 **AI-Powered Classification** - Smart categorization of emails (Promotional, Important, Newsletter, etc.)
-- 🌳 **Tree Planting Program** - Automatic tree planting based on CO2 savings
-- 📊 **Carbon Footprint Tracking** - Real-time monitoring of environmental impact
-- 🚀 **Smart Cleanup** - Automated unsubscription and email archiving
-- 💬 **AI Assistant** - Interactive chat for email management guidance
-- 📱 **Responsive Design** - Seamless experience across all devices
-- 🔐 **Privacy First** - Your data stays secure and encrypted
-
----
-
-## 🎯 Problem & Solution
-
-### The Problem
-- 📈 **4%** of global CO2 emissions come from digital technology
-- 💾 **20GB** average email storage per user = **85kg CO2/year**
-- 📧 Millions of unread promotional emails cluttering inboxes
-
-### Our Solution
-EcoInbox provides intelligent email management that:
-- Reduces digital carbon footprint by up to **60%**
-- Saves **2-3 hours/week** on email management
-- Plants **real trees** based on your environmental impact
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- pnpm (recommended) or npm
-- Git
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/JoshuaDsDl/EcoInbox.git
-   cd EcoInbox/ecoinbox
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   # or
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   pnpm dev
-   # or
-   npm run dev
-   ```
-
-4. **Open your browser**
-   
-   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
-
----
-
-## 📱 Features Overview
-
-### 🏠 Landing Page
-- Modern, eco-friendly design
-- Impact statistics and testimonials
-- Clear call-to-action for sign-up
-
-### 📧 Email Dashboard
-- **Three-panel layout**: Sidebar navigation, email list, preview panel
-- **Smart categorization** with color-coded badges
-- **Real-time statistics**: Emails processed, CO2 saved, trees planted
-- **Quick actions**: Archive, delete, unsubscribe
-
-### 🤖 AI Assistant
-- Interactive chat interface
-- Contextual suggestions for email management
-- Carbon footprint optimization tips
-- Personalized recommendations
-
-### 📊 Analytics & Impact
-- Monthly environmental impact reports
-- Tree planting certificates
-- Carbon savings visualization
-- "EcoInbox Wrap" - annual summary
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose | Version |
-|------------|---------|---------|
-| **Next.js** | React Framework | 15.x |
-| **TypeScript** | Type Safety | 5.x |
-| **Tailwind CSS** | Styling | 3.x |
-| **Lucide React** | Icons | Latest |
-| **shadcn/ui** | UI Components | Latest |
-
----
-
-## 🎨 Design System
-
-### Colors
-- 🟢 **Primary Green**: `#00C853` (Nature, ecology)
-- 🔵 **Secondary Blue**: `#2196F3` (Technology, trust)
-- ⚫ **Gray**: `#424242` (Text, background)
-- 🟠 **Orange**: `#FF9800` (Alerts, CTA)
-
-### Typography
-- **Headings**: Geist Sans (modern, clean)
-- **Body**: Geist Sans (readable, accessible)
-- **Code**: Geist Mono (technical elements)
-
----
-
-## 📁 Project Structure
+## 📦 Structure du Projet
 
 ```
 ecoinbox/
 ├── src/
 │   ├── app/                    # Next.js App Router
-│   │   ├── dashboard/          # Main dashboard
-│   │   ├── signin/             # Authentication
-│   │   ├── signup/             # Registration
-│   │   └── page.tsx           # Landing page
+│   │   ├── dashboard/          # Tableau de bord principal
+│   │   │   └── page.tsx        # Interface de gestion des emails
+│   │   ├── signin/             # Page de connexion
+│   │   │   └── page.tsx        # Formulaire de connexion
+│   │   ├── signup/             # Page d'inscription
+│   │   │   └── page.tsx        # Formulaire d'inscription
+│   │   ├── layout.tsx          # Layout principal
+│   │   ├── page.tsx           # Page d'accueil
+│   │   └── globals.css        # Styles globaux
 │   ├── components/
-│   │   └── ui/                # Reusable UI components
+│   │   └── ui/                # Composants UI réutilisables
+│   │       ├── avatar.tsx     # Composant avatar
+│   │       ├── badge.tsx      # Badges de catégories
+│   │       ├── button.tsx     # Boutons stylisés
+│   │       └── card.tsx       # Cartes d'information
 │   └── lib/
-│       └── utils.ts           # Utility functions
-├── public/                     # Static assets
-├── package.json
-└── README.md
+│       └── utils.ts           # Fonctions utilitaires
+├── public/                     # Assets statiques
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── components.json            # Configuration shadcn/ui
+├── next.config.ts             # Configuration Next.js
+├── package.json               # Dépendances et scripts
+├── postcss.config.mjs         # Configuration PostCSS
+├── tailwind.config.ts         # Configuration Tailwind
+└── tsconfig.json             # Configuration TypeScript
 ```
 
----
+## 🚀 Installation
 
-## 🌟 Screenshots
+### Prérequis
+
+- Node.js 18+ 
+- pnpm (recommandé) ou npm
+- Git
+
+### Configuration et Installation
+
+1. **Cloner le repository**
+```bash
+git clone https://github.com/JoshuaDsDl/EcoInbox.git
+cd EcoInbox/ecoinbox
+```
+
+2. **Installer les dépendances**
+```bash
+pnpm install
+```
+
+3. **Lancer le serveur de développement**
+```bash
+pnpm dev
+```
+
+4. **Accéder à l'application**
+   
+   Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur
+
+### Scripts Disponibles
+
+```bash
+pnpm dev      # Serveur de développement
+pnpm build    # Build de production
+pnpm start    # Serveur de production
+pnpm lint     # Analyse du code
+```
+
+## 🔑 Fonctionnalités Principales
+
+### Page d'Accueil
+- Design moderne et écologique
+- Présentation des fonctionnalités principales
+- Statistiques d'impact environnemental
+- Appels à l'action pour l'inscription
+
+### Authentification
+- Système de connexion sécurisé
+- Formulaire d'inscription avec validation
+- Interface utilisateur intuitive
+
+### Tableau de Bord
+- **Interface trois panneaux** : Navigation, liste des emails, panneau de prévisualisation
+- **Classification intelligente** avec badges colorés par catégorie
+- **Statistiques en temps réel** : Emails traités, CO2 économisé, arbres équivalents
+- **Actions rapides** : Archiver, supprimer, se désabonner
+- **Gestion des pièces jointes** volumineuses
+
+### Suivi Environnemental
+- Calcul de l'empreinte carbone des emails
+- Suggestions écologiques personnalisées
+- Rapport mensuel d'impact environnemental
+- Visualisation des économies réalisées
+
+### Actions Écologiques
+- Désabonnements suggérés pour les newsletters rarement ouvertes
+- Nettoyage des pièces jointes volumineuses
+- Archivage local pour réduire le stockage cloud
+- Configuration de règles de nettoyage automatique
+
+## 🎨 Design System
+
+### Palette de Couleurs
+- **Vert Principal** : `#00C853` (Écologie, nature)
+- **Emeraude** : `#10B981` (Actions positives)
+- **Gris** : `#6B7280` (Texte, éléments neutres)
+- **Rouge** : `#EF4444` (Éléments importants)
+- **Orange** : `#F59E0B` (Alertes, promotions)
+- **Bleu** : `#3B82F6` (Informations, liens)
+
+### Typographie
+- **Police principale** : Geist Sans (moderne, lisible)
+- **Police système** : Inter, sans-serif (fallback)
+- **Poids** : 400 (normal), 500 (medium), 600 (semibold), 700 (bold)
+
+## 🔧 Architecture
+
+L'application suit une architecture moderne basée sur :
+
+- **Next.js App Router** : Routage et rendu côté serveur
+- **TypeScript** : Typage statique pour la fiabilité
+- **Tailwind CSS** : Styling utilitaire et responsive
+- **Component-Based** : Architecture modulaire et réutilisable
+- **Static Generation** : Optimisation des performances
+
+## 🌟 Aperçu des Écrans
+
+### 📧 Tableau de Bord Principal
+- Liste des emails avec catégorisation automatique
+- Prévisualisation des emails avec suggestions écologiques
+- Statistiques d'impact environnemental en temps réel
+- Interface responsive pour mobile et desktop
+
+### 🌱 Actions Écologiques
+- Suggestions de désabonnements intelligentes
+- Gestion des pièces jointes volumineuses
+- Configuration de l'archivage local
+- Optimisation de l'empreinte carbone
+
+### 📊 Statistiques d'Impact
+- Suivi du CO2 économisé mensuellement
+- Nombre d'emails traités et optimisés
+- Stockage libéré grâce au nettoyage
+- Équivalence en arbres plantés
+
+## 📝 Licence
+
+EcoInbox est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+```
+MIT License
+
+Copyright (c) 2025 JDSoft
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 <div align="center">
-
-### 🏠 Landing Page
-![Landing Page](https://via.placeholder.com/800x400/00C853/white?text=EcoInbox+Landing+Page)
-
-### 📧 Dashboard
-![Dashboard](https://via.placeholder.com/800x400/2196F3/white?text=Email+Dashboard)
-
-### 💬 AI Assistant
-![AI Assistant](https://via.placeholder.com/800x400/FF9800/white?text=AI+Assistant+Chat)
-
-</div>
-
----
-
-## 🎯 Roadmap
-
-### Phase 1 ✅
-- [x] Landing page design
-- [x] Email dashboard interface
-- [x] AI assistant chat
-- [x] Responsive mobile design
-- [x] Basic email management
-
-### Phase 2 🚧
-- [ ] Email provider integration (Gmail, Outlook)
-- [ ] Real AI processing backend
-- [ ] User authentication system
-- [ ] Payment integration
-
-### Phase 3 🔮
-- [ ] Tree planting API integration
-- [ ] Advanced analytics dashboard
-- [ ] Browser extension
-- [ ] Mobile app (React Native)
-
----
-
-## 🤝 Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-## 👨‍💻 Author
-
-**Joshua Deschietere**
-
-- GitHub: [@JoshuaDsDl](https://github.com/JoshuaDsDl)
-- Project Link: [https://github.com/JoshuaDsDl/EcoInbox](https://github.com/JoshuaDsDl/EcoInbox)
-
----
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) - The React Framework for Production
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
-- [Lucide](https://lucide.dev/) - Beautiful & consistent icon pack
-- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
-
----
-
-<div align="center">
-
-**Made with 💚 for a greener digital future**
-
+<sub>Développé avec 🌱 par Joshua DESCHIETERE</sub>
 </div>
