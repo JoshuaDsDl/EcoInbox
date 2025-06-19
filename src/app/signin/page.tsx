@@ -15,6 +15,7 @@ export default function SignIn() {
       {/* Back to Home */}
       <Link 
         href="/" 
+        prefetch={false}
         className="fixed top-6 left-6 z-50 flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:text-emerald-600 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />
@@ -104,9 +105,11 @@ export default function SignIn() {
             </div>
 
             {/* Sign In Button */}
-            <Button className="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white py-3">
-              Sign In
-            </Button>
+            <Link href="/dashboard" prefetch={false}>
+              <Button className="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white py-3">
+                Sign In
+              </Button>
+            </Link>
 
             {/* Divider */}
             <div className="relative">
@@ -142,7 +145,7 @@ export default function SignIn() {
             {/* Sign Up Link */}
             <div className="text-center text-sm text-slate-600 dark:text-slate-400">
               Don't have an account?{' '}
-              <Link href="/signup" className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
+              <Link href="/signup" prefetch={false} className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
                 Sign up for free
               </Link>
             </div>

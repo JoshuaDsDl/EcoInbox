@@ -34,6 +34,7 @@ export default function SignUp() {
       {/* Back to Home */}
       <Link 
         href="/" 
+        prefetch={false}
         className="fixed top-6 left-6 z-50 flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:text-emerald-600 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />
@@ -202,11 +203,11 @@ export default function SignUp() {
                     />
                     <span className="text-sm text-slate-600 dark:text-slate-400 group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors">
                       I agree to the{' '}
-                      <Link href="/terms" className="text-emerald-600 hover:text-emerald-700 underline">
+                      <Link href="/terms" prefetch={false} className="text-emerald-600 hover:text-emerald-700 underline">
                         Terms of Service
                       </Link>{' '}
                       and{' '}
-                      <Link href="/privacy" className="text-emerald-600 hover:text-emerald-700 underline">
+                      <Link href="/privacy" prefetch={false} className="text-emerald-600 hover:text-emerald-700 underline">
                         Privacy Policy
                       </Link>
                     </span>
@@ -234,7 +235,7 @@ export default function SignUp() {
                 {/* Sign In Link */}
                 <div className="text-center text-sm text-slate-600 dark:text-slate-400">
                   Already have an account?{' '}
-                  <Link href="/signin" className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
+                  <Link href="/signin" prefetch={false} className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
                     Sign in
                   </Link>
                 </div>
@@ -291,37 +292,36 @@ export default function SignUp() {
                     <div className="flex items-center justify-between">
                       <div>
                         <h3 className="font-semibold text-slate-900 dark:text-slate-100">Premium Plan</h3>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">Unlimited analysis & 12 AI categories</p>
-                        <p className="text-xs text-emerald-600 mt-1">Auto-archiving + calendar sync + 25 trees/year</p>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">Automatic cleanup & detailed statistics</p>
+                        <p className="text-xs text-emerald-600 mt-1">Calendar integration + periodic alerts</p>
                       </div>
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">$9</div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">$3.99</div>
                         <div className="text-xs text-slate-500">per month</div>
+                        <div className="text-xs text-emerald-600">or $39/year</div>
                       </div>
-
                     </div>
                   </div>
 
-                  {/* Pro Plan */}
+                  {/* Enterprise Plan */}
                   <div 
-                    onClick={() => setSelectedPlan('pro')}
+                    onClick={() => setSelectedPlan('enterprise')}
                     className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
-                      selectedPlan === 'pro' 
+                      selectedPlan === 'enterprise' 
                         ? 'border-emerald-500 bg-emerald-50/50 dark:bg-emerald-950/50' 
                         : 'border-slate-200 dark:border-slate-700 hover:border-emerald-300'
                     }`}
                   >
                     <div className="flex items-center justify-between">
                       <div>
-                        <h3 className="font-semibold text-slate-900 dark:text-slate-100">Pro Plan</h3>
-                        <p className="text-sm text-slate-600 dark:text-slate-400">Everything + conversational AI & API</p>
-                        <p className="text-xs text-emerald-600 mt-1">Auto-replies + developer access + 50 trees/year</p>
+                        <h3 className="font-semibold text-slate-900 dark:text-slate-100">Enterprise Plan</h3>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">Email governance & CSR reporting</p>
+                        <p className="text-xs text-emerald-600 mt-1">Dedicated support + custom features</p>
                       </div>
                       <div className="text-right">
-                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">$19</div>
-                        <div className="text-xs text-slate-500">per month</div>
+                        <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">Custom</div>
+                        <div className="text-xs text-slate-500">contact us</div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -364,10 +364,10 @@ You can start with the free plan and upgrade anytime. All paid plans include a 7
                   Your account has been created successfully
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-4">
                 {/* Success Message */}
-                <div className="text-center space-y-4">
-                  <div className="bg-emerald-50/50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 rounded-lg p-4">
+                <div className="text-center">
+                  <div className="bg-emerald-50/50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 rounded-lg p-4 mb-4">
                     <p className="text-emerald-800 dark:text-emerald-200 font-medium">
                       Welcome to the future of email management!
                     </p>
@@ -376,8 +376,8 @@ You can start with the free plan and upgrade anytime. All paid plans include a 7
                     </p>
                   </div>
                   
-                  <div className="space-y-3">
-                    <h4 className="font-semibold text-slate-900 dark:text-slate-100">
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-slate-900 dark:text-slate-100 mb-3">
                       What's next?
                     </h4>
                     <div className="grid gap-2">
@@ -397,10 +397,12 @@ You can start with the free plan and upgrade anytime. All paid plans include a 7
                 </div>
 
                 {/* Get Started Button */}
-                <Button className="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white py-3">
-                  <TreePine className="w-5 h-5 mr-2" />
-                  Get Started with EcoInbox
-                </Button>
+                                <Link href="/dashboard" prefetch={false}>
+                  <Button className="w-full bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white py-3 mb-4">
+                    <TreePine className="w-5 h-5 mr-2" />
+                    Get Started with EcoInbox
+                  </Button>
+                </Link>
 
                 {/* Alternative Actions */}
                 <div className="grid grid-cols-2 gap-3">
